@@ -1,5 +1,6 @@
 <?php
 
+
 $conn = mysqli_connect("localhost", "root", "", "techno"); //creating a connection to connect tp databse
 
 if (!$conn) {

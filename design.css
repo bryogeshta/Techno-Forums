@@ -1,22 +1,24 @@
 
 body {
-    background-color: #4E4E4E;
+    background-image:url('background.jpg');
+    background-repeat: repeat;
     text-align: center;         /* make sure IE centers the page too */
     height:100%;
+    margin:auto;
+
 }
  
 #wrapper {
-    width: 900px;
-    height:20px;
+    width: 100%;
+    height:35px;
     margin: 0 auto;             /* center the page */
 }
  
 #content {
     border: 1px solid #000;
-    background-color: #FFF;
+    background-color: #a0b1c3;
     float: left;
     font-family: Arial;
-    padding: 20px 0px;
     text-align: left;
     width: 100%; 
     margin:0 auto;               /* fill up the entire div */
@@ -28,7 +30,7 @@ body {
     border-bottom: none;        /* avoid a double border */
     clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
     width:100%;
-    height:20px;
+    height:35px;
     padding: 0 30px;
     background-color: #FFF;
     text-align: left;
@@ -41,12 +43,15 @@ body {
 #userbar {
     background-color: #fff;
     float: right;
-    width: 250px;
+    width: 400px;
 }
 
 h1{
     font-family: Arial;
     color: #F1F3F1;
+    font-size:50px;
+    text-align: left;
+    margin-left: 100px;
 }
 
 /* Menu styles */
@@ -56,8 +61,9 @@ h1{
     background-color: #00728B;
     border: 1px solid #032472;
     color: #FFF;
+    font-size:20px;
     font-family: Arial;
-    padding: 3px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
@@ -72,7 +78,9 @@ h1{
 .formelement
 {
     width:50%;
-    font-size:20;
+    font-size:20px;
+    color:white
+    ;
     float:left;
     margin:10px 0;
 
@@ -112,7 +120,93 @@ h1{
     width:100%;
     height:50px;
     padding:20px 0px;
-    background-color: #aaa;
+    font-size:20px;
+    color:white;
     float:left;
     text-align:center;
+}
+
+.left-menu 
+{
+    width:15%;
+    text-align: left;  
+    background-color: #a0b1c3;
+    float:left;
+}
+
+th
+{
+    font-size:25px;
+    padding:10px;
+    color:white; 
+    height:100%;
+}
+
+.left-menu td
+{
+    font-size:15px;
+    font-color: #FFF;
+}
+table
+{
+
+    margin:50px auto;
+    border-collapse: collapse;
+    width:80%;
+    overflow:auto;
+    border-color:white;
+
+}
+
+.right-menu
+{
+     width:85%;
+    text-align: left;  
+    background-color: #a0b1c3;
+ 
+    height:100%;
+    padding-bottom:200px;
+    float:right;
+}
+
+.right-menu tr
+{
+font-size: 20px;
+margin-left:10px;
+
+}
+
+
+.right-menu tr:nth-child(even) 
+{
+    background-color: #f2f2f2
+}
+
+.right-menu tr:nth-child(odd) 
+{
+    background-color: #d2d2d2
+}
+.right-menu td
+{
+    padding: 10px 5px;
+}
+
+table a
+{
+    text-decoration: none;
+    padding-left: 10 px ;
+    font-color: #123883;
+}
+
+.right-menu th
+{
+    background-color:#4CAF50;
+    color: white;
+}
+
+.right-menu h2
+{
+    margin-left:200px;
+    color:#ab33fa;
+    font-size:40px;
 }

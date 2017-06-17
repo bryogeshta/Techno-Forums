@@ -1,7 +1,14 @@
 <?php
-//userupdate.php
+
+session_start();
 include 'dbc.php';
 include 'header.php';
+
+
+if(!isset($_SESSION['UID']))
+        {
+          header('Location:login.php');  
+        }
 
  ?>
 

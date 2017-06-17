@@ -1,9 +1,15 @@
 <?php
-//signup.php
+
+session_start();
 include 'dbc.php';
 include 'header.php';
 
+if(isset($_SESSION['UID']))
+        {
+          header('Location:home.php');  
+        }
  ?>
+
 
 <div class="form" >
     <form name="Register" method="post" >
@@ -57,7 +63,7 @@ include 'header.php';
        <label> About Yourself: </label> 
     </div> 
        <div class="formelement">
-       <input type="textarea" class="textbox" name="statement" required="required" >
+       <input type="textarea" class="textarea" name="statement" required="required" >
     </div> 
     <div class="formelement" >
     <input type="submit" name="Register" value="Register" class="button" />
