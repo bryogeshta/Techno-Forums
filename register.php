@@ -35,14 +35,14 @@ if(isset($_SESSION['UID']))
       <label>  Birthday : </label> 
     </div>  
       <div class="formelement">
-      <input type="text" id="timepicker" class="textbox" name="birthday"  required="required" />
+      <input type="text" id="datepicker" name="birthday"  required="required" />
     </div>  
 
       <div class="formelement">
       <label>  Email : </label> 
     </div>  
       <div class="formelement">
-      <input type="text" class="textbox" name="email" placeholder="Enter your Email here" required="required" />
+      <input type="Email" class="textbox" name="email" placeholder="Enter your Email here" required="required" />
     </div>  
       <div class="formelement">
       <label>  Gender : </label>  
@@ -62,9 +62,9 @@ if(isset($_SESSION['UID']))
        <div class="formelement">
        <label> About Yourself: </label> 
     </div> 
-       <div class="formelement">
-       <input type="textarea" class="textarea" name="statement" required="required" >
-    </div> 
+      <div class="formelement">
+        <textarea  class="textarea" name="desc" placeholder="Description" required="required"></textarea>
+    </div>
     <div class="formelement" >
     <input type="submit" name="Register" value="Register" class="button" />
     </div>
@@ -86,8 +86,8 @@ if(isset($_POST['Register']))
   $email=$_POST['email'];
   $gender=$_POST['gender'];
   $country=$_POST['country'];
-  $bday=$_POST['bday'];
-  $statement=$_POST['statement'];
+  $bday=$_POST['birthday'];
+  $statement=$_POST['desc'];
   $name=$_POST['name'];
   $sql = " INSERT INTO user VALUES('','$name','$pass','$email','$bday','$gender',NOW(),'$country','$statement')";
   if ($conn->query($sql)===TRUE)
@@ -97,7 +97,7 @@ if(isset($_POST['Register']))
     }
   else{
 
-    ?><script> Alert('Email already in use')</script>"
+    ?><script> Alert('Email already in use')</script>
     <?php
   }
   }

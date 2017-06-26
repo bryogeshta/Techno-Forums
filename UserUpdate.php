@@ -47,12 +47,12 @@ if(!isset($_SESSION['UID']))
        <div class="formelement">
        <input type="text" class="textbox" name="country" id="countrypicker" required="required" /> 
     </div> 
-       <div class="formelement">
+          <div class="formelement">
        <label> About Yourself: </label> 
     </div> 
-       <div class="formelement">
-       <input type="textarea" class="textbox" name="statement" required="required" >
-    </div> 
+      <div class="formelement">
+        <textarea  class="textarea" name="desc" placeholder="Description" required="required"></textarea>
+    </div>
     <div class="formelement" >
     <input type="submit" name="Register" value="Register" class="button" />
     </div>

@@ -3,6 +3,7 @@
 session_start();
 include 'dbc.php';
 include 'header.php';
+include 'leftmenu.php';
 if(!isset($_SESSION['UID']) OR $_SESSION['UTID']==1)
         {
           header('Location:home.php');  
@@ -19,6 +20,7 @@ $result = $conn->query($sql);
                     <th>Email</th>
                     <th>Gender</th>
                     <th>Date Registered</th>
+                    <th>Action</th>
                   </tr>
 <?php
 // fetching data as it was inserted by user
@@ -37,6 +39,7 @@ while ($row = $result->fetch_assoc()) {
                   <td> '.$email.'</td>
                   <td> '.$gender.'</td>
                   <td> '.$rg.'</td>
+                  <td><a href="deleteuser.php?id='.$uid.'"> Delete </a></td>
                   
 				</tr>';
   }    

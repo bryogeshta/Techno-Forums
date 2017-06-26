@@ -22,7 +22,7 @@ if(!isset($_SESSION['UID']))
       <label> Description: </label> 
     </div>
         <div class="formelement">
-        <input type="textarea" class="textarea" name="desc" placeholder="Description" required="required" />
+        <textarea  class="textarea" name="desc" placeholder="Description" required="required"></textarea>
     </div>  
      <div class="formelement">
       <label> Topic Category: </label> 

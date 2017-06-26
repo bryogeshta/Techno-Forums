@@ -12,11 +12,13 @@ body {
     width: 100%;
     height:35px;
     margin: 0 auto;             /* center the page */
+     background-color: #FFF;
 }
  
 #content {
-    border: 1px solid #000;
-    background-color: #a0b1c3;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color:#717c88;
     float: left;
     font-family: Arial;
     text-align: left;
@@ -26,13 +28,10 @@ body {
  
 #menu {
     float: left;
-    border: 1px solid #000;
-    border-bottom: none;        /* avoid a double border */
+    border-top: 1px solid #000;       /* avoid a double border */
     clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
     width:100%;
     height:35px;
-    padding: 0 30px;
-    background-color: #FFF;
     text-align: left;
     font-size: 85%;
 }
@@ -43,26 +42,48 @@ body {
 #userbar {
     background-color: #fff;
     float: right;
-    width: 400px;
+    width: 25%;
 }
+.sdiv
+{
+    float:right;
+    width:50%;
 
-h1{
+}
+.header
+{
+    width:90%;
+    height:2em;
     font-family: Arial;
     color: #F1F3F1;
     font-size:50px;
     text-align: left;
-    margin-left: 100px;
+    padding:1em 0 20px 2em;
+    margin-right:0;
+    
+}
+
+.search
+{
+    width: 70%;
+    padding: 6px 6px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 /* Menu styles */
 
-.item 
+.item
 {
     background-color: #00728B;
     border: 1px solid #032472;
     color: #FFF;
     font-size:20px;
     font-family: Arial;
+    margin-left:20px;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -71,7 +92,6 @@ h1{
 .form
 {
     width:50%;
-    background-color: #aaa;
     margin:auto;
 }
 
@@ -79,8 +99,7 @@ h1{
 {
     width:50%;
     font-size:20px;
-    color:white
-    ;
+    color:white ;
     float:left;
     margin:10px 0;
 
@@ -112,7 +131,7 @@ h1{
 
 .button:hover
 {
-    background-color: #4CAF50
+    background-color: #4CAF50;
 }
 
 .footer
@@ -126,11 +145,16 @@ h1{
     text-align:center;
 }
 
+a
+{
+    text-decoration: none;
+    font-size:16px;
+}
 .left-menu 
 {
     width:15%;
     text-align: left;  
-    background-color: #a0b1c3;
+    background-color:#717c88;
     float:left;
 }
 
@@ -162,7 +186,7 @@ table
 {
      width:85%;
     text-align: left;  
-    background-color: #a0b1c3;
+    background-color: #717c88;
  
     height:100%;
     padding-bottom:200px;
@@ -207,6 +231,95 @@ table a
 .right-menu h2
 {
     margin-left:200px;
-    color:#ab33fa;
+    color:#e4d8ff;
     font-size:40px;
+}
+
+/* text area styling */
+
+.textarea {
+    padding: 10px;
+    min-height: 250px;
+    min-width: 400px;
+    font-size:15px;
+    font-family:Arial;
+}
+.topic
+{
+    margin: 20px auto;
+    width: 85%;
+    background-color: #2196F3;
+    margin-bottom:50px;
+
+}
+.topicname 
+{
+    padding:20px;
+    padding-top:2px;
+    padding-bottom:none;
+    font-family: "Times New Roman", Times, serif;
+    color:#CCC;
+
+}
+
+.topicname p
+{
+    font-size:30px;
+    font-weight:bold;
+    color:#FFF;
+}
+
+.description
+{
+    padding:30px;
+    background-color:#03A9F4;
+    font-size:18px;
+}
+
+.topic a
+{
+    text-decoration: none;
+    font-color: orange;
+    font-size: 20px;
+}
+
+.search-results
+{
+    width:60%;
+    height:80px;
+    margin:10px;
+    margin-left:100px;
+    background-color: #DDD;
+    padding:10px;
+    padding-bottom:0px;
+
+}
+
+.search-results a
+{
+    text-decoration: none;
+    font-color: #123883;
+    font-size: 20px;
+
+}
+
+.reply-container
+{
+    margin: 20px auto;
+    width: 85%;
+    background-color:#EEE;
+
+}
+
+.replies 
+{
+    padding:30px;
+    margin-bottom:10px;
+    background-color: #00BCD4;
+    font-size:18px;
+}
+
+.right-menu .form
+{
+    margin-left:150px!important;
 }
